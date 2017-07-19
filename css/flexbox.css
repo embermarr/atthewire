@@ -37,28 +37,26 @@
 	.main-header {
 		flex-direction: row;
 		justify-content: space-between;
-	}
-
+    }
+    
 	.col {
 		flex-basis: 0;
 	}
-
+    
 	.primary {
 		flex-grow: 3;
 	}
-
-}
 
     .site {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-}
+    }
 
     .site-content {
   flex: 1;
+    }
 }
-
 @media handheld, only screen and (max-width: 767px) {
     .headline {
         padding: 0 0 0 0;
@@ -77,4 +75,17 @@
     margin: 10px;
     word-wrap: break-word;
     }
+    
+    .pop {
+      display:none;
+      position:fixed;
+      
+      width:90%;
+      height:95%;
+      background:#1CAFB5;
+      opacity: 0.98;
+      border-radius: 15px;
+}
+   
+    
 }
