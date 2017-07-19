@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 /* ================================= 
   Base Element Styles
 ==================================== */
@@ -180,8 +182,8 @@ img {
 }
 
 .buttontext:hover {
-    background-color: #6ECCCF;
-    color: #fff;
+  background-color: #6ECCCF;
+  color: #fff;
 }
 
 form {
@@ -218,6 +220,7 @@ select {
     width: 90%;
 	}	
 }
+
 @media (min-width: 1025px) {
   .main-header,
   .row {
@@ -225,18 +228,16 @@ select {
     max-width: 1150px;
 	}
 }
+
 /* ================================= 
   Compass 
 ==================================== */
-
-
-@import "compass/css3";
 
 img {
   border-radius: 150px 0 0 150px;
   display: block;
   margin: 50px auto;
-  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
 }
 
 img:hover {
@@ -271,12 +272,8 @@ img:hover {
   opacity: 0.8;
 }
 
-body {
-  font: 15px/1.25 'Open Sans' sans-serif;
-}
-
 section {
-  padding: 30px 0px 25px 0px;
+  padding: 30px 0 25px;
   background-color: #83d3d6;
   text-align: center;
 }
@@ -311,7 +308,7 @@ section {
   color:#2E5A5C;
   cursor: pointer;
   height: 40px;
-  padding: 6px 0px 10px 9px;
+  padding: 6px 0 10px 9px;
   position: absolute;
   right: 4%;
   top: 4%;
@@ -325,5 +322,5 @@ section {
 }
 
 .submitbutton {
-    background-color: #f4fffe;
+  background-color: #f4fffe;
 }
