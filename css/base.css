@@ -21,6 +21,10 @@ ul {
   padding: 0; 
 }
 
+ul.circle {
+  list-style-type: circle;
+}
+
 p {
   font-size: .95em;
   margin-bottom: 1.8em;
