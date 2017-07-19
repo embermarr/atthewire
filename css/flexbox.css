@@ -25,7 +25,9 @@
 
 
 	.secondary {
-		order: -1;
+		order: 1;
+        
+        
 	}
 
 }
@@ -42,17 +44,17 @@
 	}
 
 	.primary {
-		flex-grow: 1.4;
+		flex-grow: 3;
 	}
 
 }
 
-.site {
+    .site {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
 
-.site-content {
+    .site-content {
   flex: 1;
 }

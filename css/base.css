@@ -8,7 +8,7 @@
 body {
 	font-family: 'Lato', sans-serif;
 	line-height: 1.6;
-	color: #130687;
+	color: black;
 	margin: 0;
 }
 ul {
@@ -23,15 +23,18 @@ p {
 h1 {
     padding-bottom: -1em;
 }
-h2,
-h3,
 a {
-	color: #093a58;
+	color: black;
 }
 h2,
 h3 {
 	margin-top: 5;
     font-family: 'Oswald', sans-serif;
+    padding-bottom: 1em;
+    color: black;
+}
+h2 {
+    line-height: 100%;
 }
 a {
 	text-decoration: none;
@@ -39,6 +42,7 @@ a {
 img {
 	max-width: 100%;
 }
+
 
 /* ================================= 
   Base Layout Styles
@@ -65,8 +69,9 @@ img {
 	text-transform: uppercase;
 }
 .main-nav a:hover {
-	color: #093a58;
+	color: darkgreen;
 }
+
 
 /* ---- Layout Containers ---- */
 
@@ -79,10 +84,7 @@ img {
 	text-align: center;
 }
 .banner {
-	color: #fff;
-	background: #105b3b;
 	padding: 3.2em 0;
-	margin-bottom: 48px;
 }
 .col {
 	padding-right: 1em;
@@ -91,24 +93,101 @@ img {
 .main-footer {
 	background: #d9e4ea;
 	padding: 2em 0;
-	margin-top: 30px;
+	
+}
+
+.blog-title {
+    text-align: center;
+}
+
+.site-content {
+    padding: 2em 0;
+    
 }
 
 /* ---- Page Elements ---- */
+
+.banner {
+	color: #fff;
+	background-image: url('../img/home4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 60vh; 
+}
 
 .logo {
 	width: 190px;
 }
 .headline {
-	margin-bottom: 20px;
+	margin-bottom: 120px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 4em;
+    color: #6ECCCF;    
 }
+
 .tagline {
-    padding: 5;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    text-align: center;
+    color: #ACE1E4;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    margin-top: 100px;
 }
 
 .feat-img {
 	border-radius: 5px;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
+
+.author-img {
+    border-radius: 50%
+}
+
+.site-content {
+    background-color: #fcfdff;
+}
+.buttontext {
+  background: none;
+  border: 2px solid;
+  font-family: 'Oswald', sans-serif;
+  margin: 1em;
+  padding: 1em 2em;
+  
+}
+
+.buttontext:hover {
+    background-color: #6ECCCF;
+    color: white;
+}
+
+form {
+  max-width: 700px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: none;
+  border-radius: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
 
 /* ================================= 
   Media Queries
@@ -130,4 +209,141 @@ img {
 		width: 80%;
 		max-width: 1150px;
 	}
+}
+
+/* ================================= 
+  Compass 
+==================================== */
+
+
+@import "compass/css3";
+
+body,html {
+  width: 100%;
+}
+img {
+  display: block;
+  margin: 50px auto;
+  border-radius: 150px 0 0 150px;
+  -webkit-transition: all 2s ease;
+}
+img:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-radius:0;
+}
+
+/* ================================= 
+ Form 
+==================================== */
+
+.rounded (@radius: 6px) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+      -ms-border-radius: @radius;
+       -o-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.trans (@transition: .3s) {
+  -webkit-transition: all @transition ease-in-out;
+     -moz-transition: all @transition ease-in-out;
+          transition: all @transition ease-in-out;
+}
+
+* {
+  margin:0;
+  padding:0;
+  border:none;
+  list-style:none;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.jsbutton {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 20px;
+    background-color: #003638;
+    
+}
+
+body {
+  font:15px/1.25 'Open Sans' sans-serif;
+  background:@base;
+}
+
+section {
+  text-align:center;
+  padding: 30px 0px 25px 0px;
+  background-color: #83D3D6;
+}
+
+section > button {
+  display:block;
+  margin:0 auto;
+  margin-bottom:20px;
+  width:600px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 12px 18px 13px;
+  color: white;
+  cursor:pointer;
+}
+
+section > button:hover {
+  opacity:0.8;
+}
+
+.pop {
+  display:none;
+  position:fixed;
+  top:10.3%;
+  left:10.3%;
+  width:60%;
+  height:80%;
+  background:#1CAFB5;
+  outline:10px solid @link; 
+  opacity: 0.98;
+  border-radius: 15px;
+}
+
+.pop > h1 {
+  padding:30px 30px 10px 30px;
+  color:@base;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  color: #002D2E;
+}
+
+.pop > p {
+  padding-left:30px;
+  font-size:100%;
+  color:@dark;
+}
+
+.pop > span {
+  cursor:pointer;
+  position:absolute;
+  top:4%;
+  right:4%;
+  -webkit-border-radius:100px;
+     -moz-border-radius:100px;
+          border-radius:100px;
+  background:@gray;
+  color:#2E5A5C;
+  padding:6px 0px 0px 9px;
+  width:30px;
+  height:30px;
+}
+
+.innertext {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  color: #002D2E;
+    
+}
+
+.submitbutton {
+    background-color: azure;
 }
