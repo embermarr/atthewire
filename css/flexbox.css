@@ -77,4 +77,8 @@
     position: fixed;
     width: 90%;   
     }
+  
+  .jsbutton {
+    width: 100px;
+  }
 }
