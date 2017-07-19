@@ -51,6 +51,10 @@
     }
 }
 
+/* ================================= 
+  For Mobile Styling
+==================================== */
+
 @media handheld, only screen and (max-width: 767px) {
   .headline {
     margin: 0 5px 0 0;
@@ -81,6 +85,9 @@
   .jsbutton {
     width: 100px;
     }
+  
+ /* ---- For Youtube Mobile Resizing ---- */ 
+  
   .video-container {
     position: relative;
     padding-bottom: 56.25%;

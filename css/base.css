@@ -186,6 +186,8 @@ img {
   color: #fff;
 }
 
+/* ---- Additional Form Styling ---- */
+
 form {
   background: none;
   border-radius: 8px;
@@ -230,7 +232,7 @@ select {
 }
 
 /* ================================= 
-  Compass 
+  Compass - For profile photo animation
 ==================================== */
 
 img {
@@ -246,7 +248,7 @@ img:hover {
 }
 
 /* ================================= 
- Form 
+ Form - Email submit form 
 ==================================== */
 * {
   border: 0;
