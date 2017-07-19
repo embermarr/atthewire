@@ -173,7 +173,7 @@ img {
 }
 
 .buttontext {
-  background: none;
+  background: #fff;
   border: 2px solid;
   font-family: 'Oswald', sans-serif;
   margin: 1em;
