@@ -1,5 +1,5 @@
 $(document).ready(function () {
-     $("button").click(function () {
+     $("#membership").click(function () {
          $(".pop").fadeIn(300);
          positionPopup();
      });
